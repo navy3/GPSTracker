@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55193ED015B0923E0099244F /* GTTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = 55193ECF15B0923E0099244F /* GTTrack.m */; };
+		553F76A715B1744B00B705D3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 553F76A615B1744B00B705D3 /* CoreLocation.framework */; };
+		553F76AA15B1746F00B705D3 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 553F76A915B1746F00B705D3 /* libsqlite3.dylib */; };
+		553F76AD15B1922200B705D3 /* GTTrackDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 553F76AC15B1922200B705D3 /* GTTrackDetail.m */; };
+		553F76B315B1C4A200B705D3 /* GTDBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 553F76B215B1C4A200B705D3 /* GTDBHelper.m */; };
+		553F76BF15B1C4BD00B705D3 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 553F76B615B1C4BD00B705D3 /* FMDatabase.m */; };
+		553F76C015B1C4BD00B705D3 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 553F76B815B1C4BD00B705D3 /* FMDatabaseAdditions.m */; };
+		553F76C115B1C4BD00B705D3 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 553F76BA15B1C4BD00B705D3 /* FMDatabasePool.m */; };
+		553F76C215B1C4BD00B705D3 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 553F76BC15B1C4BD00B705D3 /* FMDatabaseQueue.m */; };
+		553F76C315B1C4BD00B705D3 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 553F76BE15B1C4BD00B705D3 /* FMResultSet.m */; };
+		553F76C515B269D600B705D3 /* tracks.sql in Resources */ = {isa = PBXBuildFile; fileRef = 553F76C415B269D600B705D3 /* tracks.sql */; };
+		553F76DA15B270DE00B705D3 /* trackdetails.sql in Resources */ = {isa = PBXBuildFile; fileRef = 553F76D915B270DE00B705D3 /* trackdetails.sql */; };
+		553F76E415B30EFF00B705D3 /* GTBaseDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 553F76E315B30EFF00B705D3 /* GTBaseDao.m */; };
+		553F76E715B30FD900B705D3 /* GTTrackDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 553F76E615B30FD800B705D3 /* GTTrackDao.m */; };
 		55C3CF6E15A34BF0001355D2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C3CF6D15A34BF0001355D2 /* UIKit.framework */; };
 		55C3CF7015A34BF0001355D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C3CF6F15A34BF0001355D2 /* Foundation.framework */; };
 		55C3CF7215A34BF0001355D2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C3CF7115A34BF0001355D2 /* CoreGraphics.framework */; };
@@ -19,27 +33,83 @@
 		55C3CF8A15A34BF1001355D2 /* MasterViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55C3CF8815A34BF1001355D2 /* MasterViewController_iPad.xib */; };
 		55C3CF8D15A34BF1001355D2 /* DetailViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55C3CF8B15A34BF1001355D2 /* DetailViewController_iPhone.xib */; };
 		55C3CF9015A34BF1001355D2 /* DetailViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55C3CF8E15A34BF1001355D2 /* DetailViewController_iPad.xib */; };
+		55C6CD5515A7426000398548 /* GTHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C6CD5415A7426000398548 /* GTHelper.m */; };
+		55D02BDA15B65C0C00BBC514 /* navigationbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 55D02BD815B65C0C00BBC514 /* navigationbar.png */; };
+		55D02BDB15B65C0C00BBC514 /* navigationbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 55D02BD915B65C0C00BBC514 /* navigationbar@2x.png */; };
+		55D02BE415B65F1E00BBC514 /* UINavigationBar+BackgroundImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D02BE315B65C5200BBC514 /* UINavigationBar+BackgroundImage.m */; };
+		55D02BE715B663CE00BBC514 /* UIToolbar+BackgroundImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D02BE615B663CE00BBC514 /* UIToolbar+BackgroundImage.m */; };
+		55D02BED15B7111300BBC514 /* cell_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 55D02BEC15B7111300BBC514 /* cell_bg.png */; };
+		55D02BF015B71F3D00BBC514 /* GTTrackCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D02BEF15B71F3D00BBC514 /* GTTrackCell.m */; };
+		55D02BF215B7226800BBC514 /* pin.png in Resources */ = {isa = PBXBuildFile; fileRef = 55D02BF115B7226800BBC514 /* pin.png */; };
+		55DB52FB15A541AC00B38BE3 /* GTTrackListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55DB52FA15A541AC00B38BE3 /* GTTrackListViewController.m */; };
+		55DB530515A5C89C00B38BE3 /* GTGroupListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55DB530415A5C89C00B38BE3 /* GTGroupListViewController.m */; };
+		55DB530815A5C9A800B38BE3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 55DB530A15A5C9A800B38BE3 /* Localizable.strings */; };
+		55DB531515A5D72700B38BE3 /* GTTextFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55DB531415A5D72700B38BE3 /* GTTextFieldViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		55193ECE15B0923E0099244F /* GTTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTTrack.h; sourceTree = "<group>"; };
+		55193ECF15B0923E0099244F /* GTTrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTTrack.m; sourceTree = "<group>"; };
+		553F76A615B1744B00B705D3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		553F76A915B1746F00B705D3 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		553F76AB15B1922200B705D3 /* GTTrackDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTTrackDetail.h; sourceTree = "<group>"; };
+		553F76AC15B1922200B705D3 /* GTTrackDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTTrackDetail.m; sourceTree = "<group>"; };
+		553F76B115B1C4A200B705D3 /* GTDBHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTDBHelper.h; sourceTree = "<group>"; };
+		553F76B215B1C4A200B705D3 /* GTDBHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTDBHelper.m; sourceTree = "<group>"; };
+		553F76B515B1C4BD00B705D3 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		553F76B615B1C4BD00B705D3 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		553F76B715B1C4BD00B705D3 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		553F76B815B1C4BD00B705D3 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		553F76B915B1C4BD00B705D3 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		553F76BA15B1C4BD00B705D3 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		553F76BB15B1C4BD00B705D3 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		553F76BC15B1C4BD00B705D3 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		553F76BD15B1C4BD00B705D3 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		553F76BE15B1C4BD00B705D3 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		553F76C415B269D600B705D3 /* tracks.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tracks.sql; sourceTree = "<group>"; };
+		553F76D915B270DE00B705D3 /* trackdetails.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = trackdetails.sql; sourceTree = "<group>"; };
+		553F76E215B30EFF00B705D3 /* GTBaseDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTBaseDao.h; sourceTree = "<group>"; };
+		553F76E315B30EFF00B705D3 /* GTBaseDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTBaseDao.m; sourceTree = "<group>"; };
+		553F76E515B30FD800B705D3 /* GTTrackDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTTrackDao.h; sourceTree = "<group>"; };
+		553F76E615B30FD800B705D3 /* GTTrackDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTTrackDao.m; sourceTree = "<group>"; };
 		55C3CF6915A34BF0001355D2 /* GPSTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPSTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55C3CF6D15A34BF0001355D2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		55C3CF6F15A34BF0001355D2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		55C3CF7115A34BF0001355D2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		55C3CF7515A34BF0001355D2 /* GPSTracker-Info.plist */ = {isa = PBXFileReference; path = "GPSTracker-Info.plist"; sourceTree = "<group>"; };
+		55C3CF7515A34BF0001355D2 /* GPSTracker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GPSTracker-Info.plist"; sourceTree = "<group>"; };
 		55C3CF7715A34BF0001355D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		55C3CF7915A34BF0001355D2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		55C3CF7B15A34BF0001355D2 /* GPSTracker-Prefix.pch */ = {isa = PBXFileReference; path = "GPSTracker-Prefix.pch"; sourceTree = "<group>"; };
-		55C3CF7C15A34BF0001355D2 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		55C3CF7B15A34BF0001355D2 /* GPSTracker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GPSTracker-Prefix.pch"; sourceTree = "<group>"; };
+		55C3CF7C15A34BF0001355D2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		55C3CF7D15A34BF0001355D2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		55C3CF7F15A34BF0001355D2 /* MasterViewController.h */ = {isa = PBXFileReference; path = MasterViewController.h; sourceTree = "<group>"; };
+		55C3CF7F15A34BF0001355D2 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
 		55C3CF8015A34BF0001355D2 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		55C3CF8215A34BF0001355D2 /* DetailViewController.h */ = {isa = PBXFileReference; path = DetailViewController.h; sourceTree = "<group>"; };
+		55C3CF8215A34BF0001355D2 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		55C3CF8315A34BF1001355D2 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		55C3CF8615A34BF1001355D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MasterViewController_iPhone.xib; sourceTree = "<group>"; };
 		55C3CF8915A34BF1001355D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MasterViewController_iPad.xib; sourceTree = "<group>"; };
 		55C3CF8C15A34BF1001355D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController_iPhone.xib; sourceTree = "<group>"; };
 		55C3CF8F15A34BF1001355D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController_iPad.xib; sourceTree = "<group>"; };
+		55C6CD5315A7426000398548 /* GTHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTHelper.h; sourceTree = "<group>"; };
+		55C6CD5415A7426000398548 /* GTHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTHelper.m; sourceTree = "<group>"; };
+		55D02BD815B65C0C00BBC514 /* navigationbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navigationbar.png; sourceTree = "<group>"; };
+		55D02BD915B65C0C00BBC514 /* navigationbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigationbar@2x.png"; sourceTree = "<group>"; };
+		55D02BE215B65C5200BBC514 /* UINavigationBar+BackgroundImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+BackgroundImage.h"; sourceTree = "<group>"; };
+		55D02BE315B65C5200BBC514 /* UINavigationBar+BackgroundImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+BackgroundImage.m"; sourceTree = "<group>"; };
+		55D02BE515B663CE00BBC514 /* UIToolbar+BackgroundImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIToolbar+BackgroundImage.h"; sourceTree = "<group>"; };
+		55D02BE615B663CE00BBC514 /* UIToolbar+BackgroundImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIToolbar+BackgroundImage.m"; sourceTree = "<group>"; };
+		55D02BEC15B7111300BBC514 /* cell_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cell_bg.png; sourceTree = "<group>"; };
+		55D02BEE15B71F3D00BBC514 /* GTTrackCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTTrackCell.h; sourceTree = "<group>"; };
+		55D02BEF15B71F3D00BBC514 /* GTTrackCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTTrackCell.m; sourceTree = "<group>"; };
+		55D02BF115B7226800BBC514 /* pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pin.png; sourceTree = "<group>"; };
+		55DB52F915A541AC00B38BE3 /* GTTrackListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTTrackListViewController.h; sourceTree = "<group>"; };
+		55DB52FA15A541AC00B38BE3 /* GTTrackListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTTrackListViewController.m; sourceTree = "<group>"; };
+		55DB530315A5C89C00B38BE3 /* GTGroupListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTGroupListViewController.h; sourceTree = "<group>"; };
+		55DB530415A5C89C00B38BE3 /* GTGroupListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTGroupListViewController.m; sourceTree = "<group>"; };
+		55DB530915A5C9A800B38BE3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		55DB530B15A5C9B400B38BE3 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		55DB531315A5D72700B38BE3 /* GTTextFieldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTTextFieldViewController.h; sourceTree = "<group>"; };
+		55DB531415A5D72700B38BE3 /* GTTextFieldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTTextFieldViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,18 +117,55 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				553F76AA15B1746F00B705D3 /* libsqlite3.dylib in Frameworks */,
 				55C3CF6E15A34BF0001355D2 /* UIKit.framework in Frameworks */,
 				55C3CF7015A34BF0001355D2 /* Foundation.framework in Frameworks */,
 				55C3CF7215A34BF0001355D2 /* CoreGraphics.framework in Frameworks */,
+				553F76A715B1744B00B705D3 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		55193ECB15B08BDE0099244F /* UIComponent */ = {
+			isa = PBXGroup;
+			children = (
+				55193ECD15B08BEB0099244F /* Cell */,
+			);
+			name = UIComponent;
+			sourceTree = "<group>";
+		};
+		55193ECD15B08BEB0099244F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				55D02BEE15B71F3D00BBC514 /* GTTrackCell.h */,
+				55D02BEF15B71F3D00BBC514 /* GTTrackCell.m */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		553F76B415B1C4BD00B705D3 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				553F76B515B1C4BD00B705D3 /* FMDatabase.h */,
+				553F76B615B1C4BD00B705D3 /* FMDatabase.m */,
+				553F76B715B1C4BD00B705D3 /* FMDatabaseAdditions.h */,
+				553F76B815B1C4BD00B705D3 /* FMDatabaseAdditions.m */,
+				553F76B915B1C4BD00B705D3 /* FMDatabasePool.h */,
+				553F76BA15B1C4BD00B705D3 /* FMDatabasePool.m */,
+				553F76BB15B1C4BD00B705D3 /* FMDatabaseQueue.h */,
+				553F76BC15B1C4BD00B705D3 /* FMDatabaseQueue.m */,
+				553F76BD15B1C4BD00B705D3 /* FMResultSet.h */,
+				553F76BE15B1C4BD00B705D3 /* FMResultSet.m */,
+			);
+			path = FMDB;
+			sourceTree = "<group>";
+		};
 		55C3CF5E15A34BF0001355D2 = {
 			isa = PBXGroup;
 			children = (
+				553F76A915B1746F00B705D3 /* libsqlite3.dylib */,
 				55C3CF7315A34BF0001355D2 /* GPSTracker */,
 				55C3CF6C15A34BF0001355D2 /* Frameworks */,
 				55C3CF6A15A34BF0001355D2 /* Products */,
@@ -76,6 +183,7 @@
 		55C3CF6C15A34BF0001355D2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				553F76A615B1744B00B705D3 /* CoreLocation.framework */,
 				55C3CF6D15A34BF0001355D2 /* UIKit.framework */,
 				55C3CF6F15A34BF0001355D2 /* Foundation.framework */,
 				55C3CF7115A34BF0001355D2 /* CoreGraphics.framework */,
@@ -86,6 +194,11 @@
 		55C3CF7315A34BF0001355D2 /* GPSTracker */ = {
 			isa = PBXGroup;
 			children = (
+				55D02BE115B65C4400BBC514 /* UIKit */,
+				553F76B415B1C4BD00B705D3 /* FMDB */,
+				55193ECB15B08BDE0099244F /* UIComponent */,
+				55C6CD5115A7422600398548 /* DataModel */,
+				55DB52F415A5418C00B38BE3 /* ViewControllers */,
 				55C3CF7C15A34BF0001355D2 /* AppDelegate.h */,
 				55C3CF7D15A34BF0001355D2 /* AppDelegate.m */,
 				55C3CF7F15A34BF0001355D2 /* MasterViewController.h */,
@@ -104,12 +217,70 @@
 		55C3CF7415A34BF0001355D2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				55DB531D15A5EE8D00B38BE3 /* images */,
 				55C3CF7515A34BF0001355D2 /* GPSTracker-Info.plist */,
 				55C3CF7615A34BF0001355D2 /* InfoPlist.strings */,
 				55C3CF7915A34BF0001355D2 /* main.m */,
 				55C3CF7B15A34BF0001355D2 /* GPSTracker-Prefix.pch */,
+				55DB530A15A5C9A800B38BE3 /* Localizable.strings */,
+				553F76C415B269D600B705D3 /* tracks.sql */,
+				553F76D915B270DE00B705D3 /* trackdetails.sql */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		55C6CD5115A7422600398548 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				55C6CD5315A7426000398548 /* GTHelper.h */,
+				55C6CD5415A7426000398548 /* GTHelper.m */,
+				55193ECE15B0923E0099244F /* GTTrack.h */,
+				55193ECF15B0923E0099244F /* GTTrack.m */,
+				553F76AB15B1922200B705D3 /* GTTrackDetail.h */,
+				553F76AC15B1922200B705D3 /* GTTrackDetail.m */,
+				553F76B115B1C4A200B705D3 /* GTDBHelper.h */,
+				553F76B215B1C4A200B705D3 /* GTDBHelper.m */,
+				553F76E215B30EFF00B705D3 /* GTBaseDao.h */,
+				553F76E315B30EFF00B705D3 /* GTBaseDao.m */,
+				553F76E515B30FD800B705D3 /* GTTrackDao.h */,
+				553F76E615B30FD800B705D3 /* GTTrackDao.m */,
+			);
+			name = DataModel;
+			sourceTree = "<group>";
+		};
+		55D02BE115B65C4400BBC514 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				55D02BE515B663CE00BBC514 /* UIToolbar+BackgroundImage.h */,
+				55D02BE615B663CE00BBC514 /* UIToolbar+BackgroundImage.m */,
+				55D02BE215B65C5200BBC514 /* UINavigationBar+BackgroundImage.h */,
+				55D02BE315B65C5200BBC514 /* UINavigationBar+BackgroundImage.m */,
+			);
+			name = UIKit;
+			sourceTree = "<group>";
+		};
+		55DB52F415A5418C00B38BE3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				55DB52F915A541AC00B38BE3 /* GTTrackListViewController.h */,
+				55DB52FA15A541AC00B38BE3 /* GTTrackListViewController.m */,
+				55DB530315A5C89C00B38BE3 /* GTGroupListViewController.h */,
+				55DB530415A5C89C00B38BE3 /* GTGroupListViewController.m */,
+				55DB531315A5D72700B38BE3 /* GTTextFieldViewController.h */,
+				55DB531415A5D72700B38BE3 /* GTTextFieldViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		55DB531D15A5EE8D00B38BE3 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				55D02BF115B7226800BBC514 /* pin.png */,
+				55D02BEC15B7111300BBC514 /* cell_bg.png */,
+				55D02BD815B65C0C00BBC514 /* navigationbar.png */,
+				55D02BD915B65C0C00BBC514 /* navigationbar@2x.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +318,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				"zh-Hans",
 			);
 			mainGroup = 55C3CF5E15A34BF0001355D2;
 			productRefGroup = 55C3CF6A15A34BF0001355D2 /* Products */;
@@ -168,6 +340,13 @@
 				55C3CF8A15A34BF1001355D2 /* MasterViewController_iPad.xib in Resources */,
 				55C3CF8D15A34BF1001355D2 /* DetailViewController_iPhone.xib in Resources */,
 				55C3CF9015A34BF1001355D2 /* DetailViewController_iPad.xib in Resources */,
+				55DB530815A5C9A800B38BE3 /* Localizable.strings in Resources */,
+				553F76C515B269D600B705D3 /* tracks.sql in Resources */,
+				553F76DA15B270DE00B705D3 /* trackdetails.sql in Resources */,
+				55D02BDA15B65C0C00BBC514 /* navigationbar.png in Resources */,
+				55D02BDB15B65C0C00BBC514 /* navigationbar@2x.png in Resources */,
+				55D02BED15B7111300BBC514 /* cell_bg.png in Resources */,
+				55D02BF215B7226800BBC514 /* pin.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +361,23 @@
 				55C3CF7E15A34BF0001355D2 /* AppDelegate.m in Sources */,
 				55C3CF8115A34BF0001355D2 /* MasterViewController.m in Sources */,
 				55C3CF8415A34BF1001355D2 /* DetailViewController.m in Sources */,
+				55DB52FB15A541AC00B38BE3 /* GTTrackListViewController.m in Sources */,
+				55DB530515A5C89C00B38BE3 /* GTGroupListViewController.m in Sources */,
+				55DB531515A5D72700B38BE3 /* GTTextFieldViewController.m in Sources */,
+				55C6CD5515A7426000398548 /* GTHelper.m in Sources */,
+				55193ED015B0923E0099244F /* GTTrack.m in Sources */,
+				553F76AD15B1922200B705D3 /* GTTrackDetail.m in Sources */,
+				553F76B315B1C4A200B705D3 /* GTDBHelper.m in Sources */,
+				553F76BF15B1C4BD00B705D3 /* FMDatabase.m in Sources */,
+				553F76C015B1C4BD00B705D3 /* FMDatabaseAdditions.m in Sources */,
+				553F76C115B1C4BD00B705D3 /* FMDatabasePool.m in Sources */,
+				553F76C215B1C4BD00B705D3 /* FMDatabaseQueue.m in Sources */,
+				553F76C315B1C4BD00B705D3 /* FMResultSet.m in Sources */,
+				553F76E415B30EFF00B705D3 /* GTBaseDao.m in Sources */,
+				553F76E715B30FD900B705D3 /* GTTrackDao.m in Sources */,
+				55D02BE415B65F1E00BBC514 /* UINavigationBar+BackgroundImage.m in Sources */,
+				55D02BE715B663CE00BBC514 /* UIToolbar+BackgroundImage.m in Sources */,
+				55D02BF015B71F3D00BBC514 /* GTTrackCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +422,15 @@
 				55C3CF8F15A34BF1001355D2 /* en */,
 			);
 			name = DetailViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+		55DB530A15A5C9A800B38BE3 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55DB530915A5C9A800B38BE3 /* en */,
+				55DB530B15A5C9B400B38BE3 /* zh-Hans */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -317,6 +522,7 @@
 				55C3CF9515A34BF1001355D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

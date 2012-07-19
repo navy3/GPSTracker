@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  GPSTracker
+
+  Created by  on 12-7-5.
+  Copyright (c) 2012年 freelancer. All rights reserved.
+*/
+
+"GT_Group_Title" = "Groups";
+"GT_Group_All" = "All Tracks";
+"GT_Group_Add" = "Add a New Group";
+"GT_Group_New" = "New Group";
+"GT_Group_Modify" = "Modify Group";

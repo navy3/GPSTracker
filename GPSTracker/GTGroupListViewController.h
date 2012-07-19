@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GTTextFieldViewController.h"
 
-@interface GTGroupListViewController : UIViewController
+@interface GTGroupListViewController : UITableViewController<GTTextFieldDelegate>
+{
+    int selectedIndex;
+}
+
+- (void)showTrackAtIndex:(int)index withAnimation:(BOOL)animated;
 
 @end

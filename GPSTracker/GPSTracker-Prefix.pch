@@ -12,3 +12,9 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
 #endif
+
+#define GT_RELEASE(var) { [var release]; var = nil; }
+#define CF_RELEASE(var) { if (var != nil) { CFRelease(var); } }
+
+#define BG_COLOR [UIColor colorWithRed:0.94 green:0.93 blue:0.91 alpha:1.0]
+#define NAVBAR_TINTCOLOR [UIColor colorWithRed:0.13f green:0.32f blue:0.53f alpha:1.00f]

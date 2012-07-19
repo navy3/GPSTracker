@@ -12,6 +12,14 @@
 
 #import "DetailViewController.h"
 
+#import "GTGroupListViewController.h"
+
+#import "GTDBHelper.h"
+
+#import "GTTrackDao.h"
+
+#import "UINavigationBar+BackgroundImage.h"
+
 @implementation AppDelegate
 
 @synthesize window = _window;
@@ -28,12 +36,38 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+//    {
+//        NSString *bundlePath = [[NSBundle mainBundle] bundlePath];
+//
+//        NSFileManager *fileManager = [NSFileManager defaultManager];
+//        NSArray *bundleDirectory = [fileManager contentsOfDirectoryAtPath:bundlePath error:nil];
+//
+//        NSPredicate *filter = [NSPredicate predicateWithFormat:@"self ENDSWITH '.png'"];
+//        NSArray *pngFiles = [bundleDirectory filteredArrayUsingPredicate:filter];
+//
+//        NSArray *filesURLs = [[NSBundle mainBundle] URLsForResourcesWithExtension:@"png" subdirectory:nil];
+//
+//        NSLog(@"PNG files: %@ %@", pngFiles,filesURLs);
+//        
+//        // Using the application home directory, get dictionary of attributes
+//        NSDictionary *attributesDict = [fileManager attributesOfFileSystemForPath:NSHomeDirectory() error:NULL];
+//        
+//        // Print total file system size and available space  
+//        NSLog(@"File system size: %lld", [[attributesDict objectForKey:NSFileSystemSize] longLongValue]);
+//        NSLog(@"File system free space: %lld", [[attributesDict objectForKey:NSFileSystemFreeSize] longLongValue]);
+//    }
+    
+    [[GTDBHelper defaultHelper] createCommonDBTables];
+    
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        MasterViewController *masterViewController = [[[MasterViewController alloc] initWithNibName:@"MasterViewController_iPhone" bundle:nil] autorelease];
+        GTGroupListViewController *masterViewController = [[[GTGroupListViewController alloc] init] autorelease];
         self.navigationController = [[[UINavigationController alloc] initWithRootViewController:masterViewController] autorelease];
+        [UINavigationBar iOS5UINavigationBarBackgroundImage];
+        self.navigationController.navigationBar.tintColor = NAVBAR_TINTCOLOR;
         self.window.rootViewController = self.navigationController;
+        [masterViewController showTrackAtIndex:0 withAnimation:NO];
     } else {
         MasterViewController *masterViewController = [[[MasterViewController alloc] initWithNibName:@"MasterViewController_iPad" bundle:nil] autorelease];
         UINavigationController *masterNavigationController = [[[UINavigationController alloc] initWithRootViewController:masterViewController] autorelease];

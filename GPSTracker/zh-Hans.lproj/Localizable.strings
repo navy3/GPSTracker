@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  GPSTracker
+
+  Created by  on 12-7-5.
+  Copyright (c) 2012年 freelancer. All rights reserved.
+*/
+
+"GT_Group_Title" = "分组";
+"GT_Group_All" = "全部足迹";
+"GT_Group_Add" = "添加新分组";
+"GT_Group_New" = "新分组";
+"GT_Group_Modify" = "修改分组";
