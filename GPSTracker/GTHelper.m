@@ -33,4 +33,22 @@
 	return [arr autorelease];
 }
 
+
++ (UIImage *)imageWithType:(int)type
+{
+    UIImage *img;
+    switch (type) {
+        case GT_Text:
+            img = [UIImage imageNamed:@"text_type.png"];
+            break;
+        case GT_Image:
+            img = [UIImage imageNamed:@"image_type.png"];
+            break;
+        case GT_Record:
+            img = [UIImage imageNamed:@"record_type.png"];
+            break;
+    }
+    return img;
+}
+
 @end

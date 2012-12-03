@@ -10,7 +10,7 @@
 
 @implementation GTTrack
 
-@synthesize tid,latitude,longitude,trackName,trackAddress,trackGroup,trackType,trackTime;
+@synthesize tid,latitude,longitude,trackName,trackAddress,trackGroup,trackType,trackTime,trackImageUrl;
 
 - (id)init
 {
@@ -22,6 +22,7 @@
 
 - (void)dealloc
 {
+    GT_RELEASE(trackImageUrl);
     GT_RELEASE(trackName);
     GT_RELEASE(trackAddress);
     GT_RELEASE(trackGroup);

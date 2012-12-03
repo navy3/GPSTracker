@@ -12,6 +12,14 @@
 
 @synthesize did,tid,content,contentType,addTime;
 
+- (id)init
+{
+    if (self = [super init]) {
+        
+    }
+    return self;
+}
+
 - (void)dealloc
 {
     GT_RELEASE(content);

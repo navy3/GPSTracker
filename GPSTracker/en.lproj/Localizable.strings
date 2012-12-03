@@ -11,3 +11,32 @@
 "GT_Group_Add" = "Add a New Group";
 "GT_Group_New" = "New Group";
 "GT_Group_Modify" = "Modify Group";
+
+"GT_Track_Name" = "Name";
+
+"GT_Alert_NO_Network" = "not reachable network";
+"GT_Alert_OK" = "OK";
+"GT_Alert_Success" = "Set Cover Success";
+
+"GT_Detail" = "Detail";
+"GT_Detail_Name" = "Name";
+"GT_Detail_Group" = "Group";
+"GT_Detail_Tag" = "Tag";
+"GT_Detail_Time" = "Time";
+"GT_Detail_Address" = "Address";
+"GT_Detail_Note" = "Notes";
+"GT_Detail_Map" = "Map";
+"GT_Detail_UpdateAddress" = "Click to update address";
+"GT_Detail_New_Text" = "New Text";
+"GT_Detail_New_Record" = "New Record";
+
+"GT_Record_Save" = "Save";
+"GT_Record_Record" = "Record";
+"GT_Record_Stop" = "Stop";
+"GT_Record_Play" = "Play";
+
+"GT_ActionSheet_Cancel" = "Cancel";
+"GT_ActionSheet_Play" = "Play";
+"GT_ActionSheet_Stop" = "Stop";
+
+"GT_Photo_Cover" = "Set Cover";

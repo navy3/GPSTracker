@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "GTTrackDetail.h"
 
 #define kGroupKey @"kGroupKey"
 #define kGroupListName @"gtgroup.plist"
@@ -17,5 +18,7 @@
 
 + (void)saveGroupList:(NSArray *)arr;
 + (NSArray *)groupList;
+
++ (UIImage *)imageWithType:(int)type;
 
 @end

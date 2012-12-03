@@ -51,6 +51,7 @@
         track.title = [dataArray objectAtIndex:index - 1];
     }
     [self.navigationController pushViewController:track animated:animated];
+
     [track release];
 }
 
@@ -121,6 +122,22 @@
 {
     // Return the number of rows in the section.
     return [dataArray count] + 1;
+}
+
+// Override to support conditional editing of the table view.
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    // Return NO if you do not want the specified item to be editable.
+    return YES;
+	
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (UITableViewCellEditingStyleDelete == editingStyle) {
+        [dataArray removeObjectAtIndex:indexPath.row - 1];
+        [GTHelper saveGroupList:dataArray];
+        [self.tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath

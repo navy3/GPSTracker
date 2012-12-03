@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KDImageView.h"
+#import "GTTrack.h"
 
-@interface GTTrackCell : UITableViewCell
+@interface GTTrackCell : UITableViewCell<KDImageViewDelegate>
+
+- (void)updateCell:(GTTrack *)gttrack;
 
 @end

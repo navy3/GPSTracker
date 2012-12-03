@@ -18,6 +18,7 @@
     NSString *trackName;
     NSString *trackAddress;
     NSString *trackGroup;
+    NSString *trackImageUrl;
     
     int trackType;
     
@@ -33,6 +34,8 @@
 @property (nonatomic, copy) NSString *trackName;
 @property (nonatomic, copy) NSString *trackAddress;
 @property (nonatomic, copy) NSString *trackGroup;
+@property (nonatomic, copy) NSString *trackImageUrl;
+
 @property (nonatomic, retain) NSDate *trackTime;
 
 @end

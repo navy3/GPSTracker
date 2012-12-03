@@ -16,7 +16,7 @@
 - (id)init
 {
 	if (self = [super init]) {
-		db = [[GTDBHelper defaultHelper] database];
+		self.db = [[GTDBHelper defaultHelper] database];
 	}
 	return self;
 }
@@ -26,7 +26,6 @@
 }
 
 - (void)dealloc {
-	[db release];
 	[super dealloc];
 }
 

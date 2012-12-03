@@ -7,5 +7,6 @@ CREATE TABLE IF NOT EXISTS "tracks"
 	[trackName] text,
 	[trackAddress] text,
 	[trackType] integer,
-	[trackTime] date
+	[trackTime] date,
+    [trackImageUrl] text
 );

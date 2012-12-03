@@ -11,3 +11,32 @@
 "GT_Group_Add" = "添加新分组";
 "GT_Group_New" = "新分组";
 "GT_Group_Modify" = "修改分组";
+
+"GT_Track_Name" = "名称";
+
+"GT_Alert_NO_Network" = "没有可用网络";
+"GT_Alert_OK" = "确定";
+"GT_Alert_Success" = "设置封面成功";
+
+"GT_Detail" = "详情";
+"GT_Detail_Name" = "名称";
+"GT_Detail_Group" = "分组";
+"GT_Detail_Tag" = "标签";
+"GT_Detail_Time" = "时间";
+"GT_Detail_Address" = "地址";
+"GT_Detail_Note" = "记录";
+"GT_Detail_Map" = "地图";
+"GT_Detail_UpdateAddress" = "点击更新地址详情";
+"GT_Detail_New_Text" = "新文本";
+"GT_Detail_New_Record" = "新录音";
+
+"GT_Record_Save" = "保存";
+"GT_Record_Record" = "录音";
+"GT_Record_Stop" = "停止";
+"GT_Record_Play" = "播放";
+
+"GT_ActionSheet_Cancel" = "取消";
+"GT_ActionSheet_Play" = "播放";
+"GT_ActionSheet_Stop" = "停止";
+
+"GT_Photo_Cover" = "设置为封面";

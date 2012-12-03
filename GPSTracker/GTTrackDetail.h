@@ -8,6 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+enum
+{
+    GT_Text = 0,
+    GT_Image,
+    GT_Record
+}GTContentTypes;
+
 @interface GTTrackDetail : NSObject
 {
     int did;
